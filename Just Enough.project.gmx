@@ -5,9 +5,50 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_tempdoor</sprite>
+    <sprite>sprites\spr_tempfloor</sprite>
+    <sprite>sprites\spr_tempplayer</sprite>
+    <sprite>sprites\spr_tempwall</sprite>
+    <sprite>sprites\spr_tempinteract</sprite>
+    <sprite>sprites\spr_tempforegrounddoor</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_interact.gml</script>
+    <script>scripts\scr_boundarytransition.gml</script>
+    <script>scripts\scr_setplayerpos.gml</script>
+    <script>scripts\scr_tempmovement.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_tempdoor</object>
+    <object>objects\obj_tempinteract</object>
+    <object>objects\obj_tempfloor</object>
+    <object>objects\obj_tempwall</object>
+    <object>objects\obj_tempplayer</object>
+    <object>objects\obj_fadetoblack</object>
+    <object>objects\obj_boundarydoor</object>
+    <object>objects\obj_tempforegrounddoor</object>
+    <object>objects\obj_initialiseglobalvars</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_initialise</room>
+    <rooms name="Level 1(Mansion)">
+      <room>rooms\rm_centralroom</room>
+      <room>rooms\rm_rightlivingroom</room>
+      <room>rooms\rm_diningroom</room>
+      <room>rooms\rm_hallway</room>
+      <room>rooms\rm_leftlivingroom</room>
+      <room>rooms\rm_fatherbedroom</room>
+      <room>rooms\rm_motherbedroom</room>
+      <room>rooms\rm_playerbedroom</room>
+      <room>rooms\rm_courtyard</room>
+      <room>rooms\rm_playerbalcony</room>
+      <room>rooms\rm_motherbalcony</room>
+      <room>rooms\rm_fatherbalcony</room>
+    </rooms>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
