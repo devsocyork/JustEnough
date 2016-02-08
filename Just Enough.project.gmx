@@ -6,31 +6,50 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_tempdoor</sprite>
-    <sprite>sprites\spr_tempfloor</sprite>
-    <sprite>sprites\spr_tempplayer</sprite>
-    <sprite>sprites\spr_tempwall</sprite>
-    <sprite>sprites\spr_tempinteract</sprite>
-    <sprite>sprites\spr_tempforegrounddoor</sprite>
+    <sprites name="tempsprites_michael">
+      <sprite>sprites\spr_tempforegrounddoor</sprite>
+      <sprite>sprites\spr_tempdoor</sprite>
+      <sprite>sprites\spr_tempfloor</sprite>
+      <sprite>sprites\spr_tempwall</sprite>
+      <sprite>sprites\spr_tempplayer</sprite>
+      <sprite>sprites\spr_tempinteract</sprite>
+      <sprite>sprites\spr_interactable</sprite>
+      <sprite>sprites\spr_boundarydoor</sprite>
+      <sprite>sprites\spr_temptiara</sprite>
+      <sprite>sprites\spr_tempchair</sprite>
+      <sprite>sprites\spr_tempcoat</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_interact.gml</script>
-    <script>scripts\scr_boundarytransition.gml</script>
-    <script>scripts\scr_setplayerpos.gml</script>
-    <script>scripts\scr_tempmovement.gml</script>
+    <scripts name="transition_interaction_scripts">
+      <script>scripts\scr_setinventory.gml</script>
+      <script>scripts\scr_interact.gml</script>
+      <script>scripts\scr_boundarytransition.gml</script>
+      <script>scripts\scr_setplayerpos.gml</script>
+      <script>scripts\scr_tempmovement.gml</script>
+      <script>scripts\scr_initialiseglobalvars.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_tempdoor</object>
-    <object>objects\obj_tempinteract</object>
-    <object>objects\obj_tempfloor</object>
-    <object>objects\obj_tempwall</object>
-    <object>objects\obj_tempplayer</object>
     <object>objects\obj_fadetoblack</object>
-    <object>objects\obj_boundarydoor</object>
-    <object>objects\obj_tempforegrounddoor</object>
     <object>objects\obj_initialiseglobalvars</object>
+    <object>objects\obj_interactable</object>
+    <objects name="tempobjects_michael">
+      <object>objects\obj_temptiara</object>
+      <object>objects\obj_tempfloor</object>
+      <object>objects\obj_tempinteract</object>
+      <object>objects\obj_tempplayer</object>
+      <object>objects\obj_tempwall</object>
+      <object>objects\obj_boundarydoor</object>
+      <object>objects\obj_tempforegrounddoor</object>
+      <object>objects\obj_tempchair</object>
+      <object>objects\obj_tempinventorycoat</object>
+      <object>objects\obj_tempcoat</object>
+      <object>objects\obj_tempinventorytiara</object>
+      <object>objects\obj_tempdoor</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialise</room>
@@ -47,6 +66,7 @@
       <room>rooms\rm_playerbalcony</room>
       <room>rooms\rm_motherbalcony</room>
       <room>rooms\rm_fatherbalcony</room>
+      <room>rooms\rm_finishlevel</room>
     </rooms>
   </rooms>
   <help>
