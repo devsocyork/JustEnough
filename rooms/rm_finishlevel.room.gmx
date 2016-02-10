@@ -7,7 +7,7 @@
   <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>8454143</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -67,7 +67,6 @@
     <instance objName="obj_tempfloor" x="832" y="704" name="inst_9EF2D6AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempfloor" x="896" y="704" name="inst_5D6F1A60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempfloor" x="960" y="704" name="inst_D3744A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tempplayer" x="128" y="576" name="inst_8B61C8E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempwall" x="64" y="64" name="inst_4010B0B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempwall" x="64" y="128" name="inst_8768F3E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempwall" x="64" y="192" name="inst_2FEBB9DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

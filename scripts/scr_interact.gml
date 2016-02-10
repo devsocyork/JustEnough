@@ -1,7 +1,7 @@
 //Had to use step event for this script, can't find a way to detect leaving a collision otherwise
 
 //Check for collisions with interactable objects
-l_colobject = collision_rectangle(x,y,x + sprite_width,y + sprite_height,obj_interactable,0,1);
+var l_colobject = collision_rectangle(x,y,x + sprite_width,y + sprite_height,obj_interactable,0,1);
 
 //If the player is colliding with a door and they are not busy, execute the following code
 if(l_colobject and not global.transitioning)
@@ -49,12 +49,18 @@ if(l_colobject and not global.transitioning)
         else if(object_get_name(l_colobject.id.object_index) == "obj_tempcoat")
         {
             //Pick up coat
-            scr_inventory_set_coat(true);
+            global.hascoat= true;
+            with(l_colobject)
+                instance_destroy();
+            instance_create(896,0,obj_tempinventorycoat);
         }
         else if(object_get_name(l_colobject.id.object_index) == "obj_temptiara")
         {
             //Pick up tiara
-            scr_inventory_set_tiara(true);              
+            global.hastiara = true;
+            with(l_colobject)
+                instance_destroy();
+            instance_create(960,0,obj_tempinventorytiara);
         }
     }   
 }

@@ -176,6 +176,10 @@ fadealpha += 0.05;
 if (fadealpha &gt;= 1.0 )
 {
     room_goto(newroom);
+    with(obj_tempplayer)
+    {
+        scr_setplayerpos()
+    }
     global.transitioning = false;
     instance_destroy();
 }

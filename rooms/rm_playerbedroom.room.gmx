@@ -7,7 +7,7 @@
   <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>4227327</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -101,7 +101,6 @@
     <instance objName="obj_tempwall" x="960" y="384" name="inst_CA53F148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempwall" x="960" y="448" name="inst_B69B4019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempwall" x="960" y="512" name="inst_D00602EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tempplayer" x="384" y="576" name="inst_925504A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempdoor" x="256" y="576" name="inst_E9942F3B" locked="0" code="levelstring = &quot;rm_hallway&quot;&#xA;roomposx = 192;&#xA;roomposy = 576;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempdoor" x="576" y="576" name="inst_60685E69" locked="0" code="levelstring = &quot;rm_playerbalcony&quot;&#xA;roomposx = 576;&#xA;roomposy = 576;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tempwall" x="960" y="576" name="inst_ECF3A858" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
