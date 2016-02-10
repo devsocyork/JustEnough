@@ -24,12 +24,16 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="transition_interaction_scripts">
-      <script>scripts\scr_setinventory.gml</script>
       <script>scripts\scr_interact.gml</script>
       <script>scripts\scr_boundarytransition.gml</script>
       <script>scripts\scr_setplayerpos.gml</script>
       <script>scripts\scr_tempmovement.gml</script>
       <script>scripts\scr_initialiseglobalvars.gml</script>
+      <scripts name="inventory_set_scripts">
+        <script>scripts\scr_setinventory.gml</script>
+        <script>scripts\scr_inventory_set_tiara.gml</script>
+        <script>scripts\scr_inventory_set_coat.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
