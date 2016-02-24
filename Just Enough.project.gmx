@@ -6,18 +6,25 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="tempsprites_michael">
-      <sprite>sprites\spr_tempforegrounddoor</sprite>
-      <sprite>sprites\spr_tempdoor</sprite>
-      <sprite>sprites\spr_tempfloor</sprite>
-      <sprite>sprites\spr_tempwall</sprite>
-      <sprite>sprites\spr_tempplayer</sprite>
-      <sprite>sprites\spr_tempinteract</sprite>
-      <sprite>sprites\spr_interactable</sprite>
-      <sprite>sprites\spr_boundarydoor</sprite>
-      <sprite>sprites\spr_temptiara</sprite>
-      <sprite>sprites\spr_tempchair</sprite>
-      <sprite>sprites\spr_tempcoat</sprite>
+    <sprite>sprites\spr_speech_bubble</sprite>
+    <sprites name="level_1_sprites">
+      <sprites name="speech_animations">
+        <sprite>sprites\spr_tempspeechanimation</sprite>
+      </sprites>
+      <sprites name="tempsprites_michael">
+        <sprite>sprites\spr_tempforegrounddoor</sprite>
+        <sprite>sprites\spr_tempdoor</sprite>
+        <sprite>sprites\spr_tempfloor</sprite>
+        <sprite>sprites\spr_tempwall</sprite>
+        <sprite>sprites\spr_tempplayer</sprite>
+        <sprite>sprites\spr_tempinteract</sprite>
+        <sprite>sprites\spr_interactable</sprite>
+        <sprite>sprites\spr_boundarydoor</sprite>
+        <sprite>sprites\spr_temptiara</sprite>
+        <sprite>sprites\spr_tempchair</sprite>
+        <sprite>sprites\spr_tempcoat</sprite>
+        <sprite>sprites\spr_tempfather</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -32,23 +39,29 @@
     </scripts>
   </scripts>
   <objects name="objects">
+    <objects name="level_1_objects">
+      <objects name="tempobjects_michael">
+        <object>objects\obj_temptiara</object>
+        <object>objects\obj_tempfloor</object>
+        <object>objects\obj_tempinteract</object>
+        <object>objects\obj_tempplayer</object>
+        <object>objects\obj_tempwall</object>
+        <object>objects\obj_boundarydoor</object>
+        <object>objects\obj_tempforegrounddoor</object>
+        <object>objects\obj_tempchair</object>
+        <object>objects\obj_tempinventorycoat</object>
+        <object>objects\obj_tempcoat</object>
+        <object>objects\obj_tempinventorytiara</object>
+        <object>objects\obj_tempdoor</object>
+        <object>objects\obj_tempfather</object>
+        <object>objects\obj_tempspeechanimation</object>
+      </objects>
+    </objects>
     <object>objects\obj_fadetoblack</object>
     <object>objects\obj_initialiseglobalvars</object>
     <object>objects\obj_interactable</object>
-    <objects name="tempobjects_michael">
-      <object>objects\obj_temptiara</object>
-      <object>objects\obj_tempfloor</object>
-      <object>objects\obj_tempinteract</object>
-      <object>objects\obj_tempplayer</object>
-      <object>objects\obj_tempwall</object>
-      <object>objects\obj_boundarydoor</object>
-      <object>objects\obj_tempforegrounddoor</object>
-      <object>objects\obj_tempchair</object>
-      <object>objects\obj_tempinventorycoat</object>
-      <object>objects\obj_tempcoat</object>
-      <object>objects\obj_tempinventorytiara</object>
-      <object>objects\obj_tempdoor</object>
-    </objects>
+    <object>objects\obj_talkable</object>
+    <object>objects\obj_speechbubble</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialise</room>
