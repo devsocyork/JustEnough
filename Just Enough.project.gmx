@@ -37,6 +37,10 @@
       <script>scripts\scr_tempmovement.gml</script>
       <script>scripts\scr_initialiseglobalvars.gml</script>
     </scripts>
+    <scripts name="Motion">
+      <script>scripts\scr_motion.gml</script>
+      <script>scripts\scr_motion_variable_setup.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="level_1_objects">
