@@ -20,19 +20,19 @@ if grounded { //If there is ground below the player, set the player's vertical v
 var hAccel;
 hAccel = 0
 var moveValue;
-if sprintPressed {
+if obj_input.sprint {
     moveValue = sprintValue
 } else {
-    if crouchPressed {
+    if obj_input.crouch {
         moveValue = crouchValue
     } else {
         moveValue = walkValue
     }
 }
-if leftPressed { //Set acceleration horizontally (per step) based on keys pressed.  (both keys pressed = do nothing)
+if obj_input.left { //Set acceleration horizontally (per step) based on keys pressed.  (both keys pressed = do nothing)
     hAccel = hAccel - moveValue
 }
-if rightPressed {
+if obj_input.right {
     hAccel = hAccel + moveValue
 }
 
@@ -67,10 +67,10 @@ hVelocity = hVelocity + hAccel
 
 //If the player is moving faster than their maximum speed, slow them down
 var maxHV;
-if sprintPressed {
+if obj_input.sprint {
     maxHV = maxHorizontalVelocitySprinting
 } else {
-    if crouchPressed {
+    if obj_input.crouch {
         maxHV = maxHorizontalVelocityCrouching
     } else {
         maxHV = maxHorizontalVelocityWalking
@@ -173,7 +173,7 @@ if hVelocity <= -1 {
 
 jumping = false
 
-if jumpPressed and grounded {
+if obj_input.jump and grounded {
     jumping = true 
     vVelocity = -jumpVelocity
 }

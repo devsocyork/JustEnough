@@ -18,7 +18,7 @@ if(l_colobject and l_colobject.interactable and not global.transitioning)
     }
     
     //Execute different actions depending on what the player is interacting with
-    if(keyboard_check_pressed(ord('E')))
+    if(obj_input.interact)
     {   
         //If the player is interacting with a person, display speech bubble with custom animation, else check for doors/items etc
         if(object_is_ancestor(l_colobject.object_index, obj_talkable))
