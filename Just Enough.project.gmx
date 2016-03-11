@@ -41,6 +41,7 @@
       <script>scripts\scr_motion.gml</script>
       <script>scripts\scr_motion_variable_setup.gml</script>
     </scripts>
+    <script>scripts\scr_handle_input.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="level_1_objects">
@@ -60,12 +61,14 @@
         <object>objects\obj_tempfather</object>
         <object>objects\obj_tempspeechanimation</object>
       </objects>
+      <object>objects\obj_player_level_1</object>
     </objects>
     <object>objects\obj_fadetoblack</object>
     <object>objects\obj_initialiseglobalvars</object>
     <object>objects\obj_interactable</object>
     <object>objects\obj_talkable</object>
     <object>objects\obj_speechbubble</object>
+    <object>objects\object19</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initialise</room>

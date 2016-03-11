@@ -1,3 +1,4 @@
+//Static Variables
 gravityValue = 0.5 //Acceleration per step by gravity.
 terminalVelocity = 8 //The maximum velocity the player can fall.  Keep this low enough that the player doesn't fall through thin platforms.
 
@@ -19,11 +20,13 @@ slideYDifference = 2
 slideValue = 0.3
 jumping = false //This is for calculating motion, do not use or change this.
 
+
+//Dynamic Variables
 hVelocity = 0;
 vVelocity = 0;
 canMove = true;
-leftPressed = false;
-rightPressed = false;
-jumpPressed = false;
-sprintPressed = false;
-crouchPressed = false;
+//leftPressed = false;
+//rightPressed = false;
+//jumpPressed = false;
+//sprintPressed = false;
+//crouchPressed = false;
