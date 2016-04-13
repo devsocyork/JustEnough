@@ -13,5 +13,6 @@ Developed by the University of York Game Development Society following the Sprin
 - **Programming:** Michael Bohea
   - William Mendelsohn
   - Michael Walsh
+  - Alidivinas Prusokas
 - **Music:** Joni Lev
 - **Sound:** Kenric Yuen
